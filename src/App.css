@@ -102,26 +102,6 @@ label {
   width: 90%;
 }
 
-.todo-row:nth-child(4n + 1){ 
-  background: linear-gradient( 90deg, 
-  rgba(48, 16, 255, 1 ) 0%,
-  rgb(102, 1, 73) 100% 
-  );
-}
-
-.todo-row:nth-child(4n + 2){ 
-  background: linear-gradient( 90deg, 
-  rgba(48, 16, 255, 1 ) 0%,
-  rgb(1, 102, 55) 100% 
-  );
-}
-
-.todo-row:nth-child(4n + 3){ 
-  background: linear-gradient( 90deg, 
-  rgba(48, 16, 255, 1 ) 0%,
-  rgb(102, 1, 102) 100% 
-  );
-}
 
 .icons { 
   display: flex;
