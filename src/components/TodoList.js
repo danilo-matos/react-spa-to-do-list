@@ -43,7 +43,6 @@ function TodoList() {
 
   return (
     <div>
-      <h1>What's the plan for today?</h1>
       <TodoForm onSubmit={addTodo} />
       <Todo
         todos={todos}
@@ -51,6 +50,12 @@ function TodoList() {
         removeTodo={removeTodo}
         updateTodo={updateTodo}
       />
+              <div className="todo-hide">
+            <label>
+                Hide completed 
+                <input type="checkbox" />
+             </label>
+        </div>
     </div>
   );
 }

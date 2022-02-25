@@ -30,7 +30,7 @@ function TodoForm(props) {
           
             <input 
             type="text"
-            placeholder='Add To do'
+            placeholder='Whrite new task here...'
             value={input}
             name='text'
             className="todo-input"
@@ -38,10 +38,12 @@ function TodoForm(props) {
             ref={inputRef}
             />
             <button className='todo-button'>
-                Add to do
+                Create
             </button>
         </form>
+            <p>Task</p>
     </div>
+    
   )
 }
 

@@ -17,6 +17,7 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
     });
   };
 
+
   if (edit.id) {
     return <TodoForm edit={edit} onSubmit={submitUpdate} />;
   }
@@ -27,8 +28,13 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
       key={index}
     >
       <div key={todo.id} onClick={() => completeTodo(todo.id)}>
+        
+        <label>
+          <input type="checkbox" />
+        </label>
         {todo.text}
       </div>
+     
       <div className="icons">
         <RiCloseCircleLine
           onClick={() => removeTodo(todo.id)}
@@ -40,6 +46,7 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
         />
       </div>
     </div>
+  
   ));
 }
 
