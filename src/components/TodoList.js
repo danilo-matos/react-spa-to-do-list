@@ -4,6 +4,7 @@ import TodoForm from "./TodoForm";
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
+  const [hideAllChecked, setHideAllChecked] = useState(false)
 
   const addTodo = (todo) => {
     if (!todo.text || /^\*$/.test(todo.text)) {
@@ -41,6 +42,14 @@ function TodoList() {
     setTodos(updatedTodos);
   };
 
+  const onHideAllChecked = (e) => {
+
+    if(e.target.checked){
+      console.log("Hide all")
+      setTodos(todos.filter(todo => !todo.isComplete))
+    }
+  }
+
   return (
     <div>
       <TodoForm onSubmit={addTodo} />
@@ -50,12 +59,12 @@ function TodoList() {
         removeTodo={removeTodo}
         updateTodo={updateTodo}
       />
-              <div className="todo-hide">
-            <label>
-                Hide completed 
-                <input type="checkbox" />
-             </label>
-        </div>
+      <div className="todo-hide">
+        <label>
+          Hide completed
+          <input type="checkbox" onClick={onHideAllChecked} />
+        </label>
+      </div>
     </div>
   );
 }
