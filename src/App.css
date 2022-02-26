@@ -37,7 +37,6 @@ label {
 }
 
 .complete {
-  text-decoration: line-through;
   opacity: 0.4;
 }
 
@@ -113,10 +112,42 @@ label {
 .delete-icon { 
   margin-right: 5px;
   color: #fff;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: #fff 2px solid  ;
+}
+
+.delete-icon:hover{ 
+  color: rgba(255, 0, 0, 0.549);
+  transition: .9s ease-out;
+
 }
 
 .edit-icon { 
-  color: #fff
+  margin-right: 5px;
+  color: #fff;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.edit-icon:hover{ 
+  color: rgba(11, 220, 0, 0.809);
+  transition: .9s ease-out;
+
 }
 
 .todo-hide{ 

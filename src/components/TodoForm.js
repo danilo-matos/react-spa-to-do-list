@@ -41,7 +41,7 @@ function TodoForm(props) {
                 Create
             </button>
         </form>
-            <p>Task</p>
+            <p>Task...</p>
     </div>
     
   )
