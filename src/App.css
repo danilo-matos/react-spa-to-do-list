@@ -5,12 +5,6 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body {
-  background: linear-gradient( 90deg, 
-  #17181d 10%,
-  #292c35 100% 
-  );
-}
 
 p{
   color: #fff;
@@ -45,11 +39,11 @@ label {
 }
 
 .todo-input{
-  padding: 14px 32px 14px 16px;
+  padding: 14px 32px 14px 15px;
   border-radius: 4px 0 0 4px;
   border: 2px solid #201e1f;
   outline: none;
-  width: 380px;
+  width: 350px;
   background: transparent;
   color: #fff;
 }
@@ -73,10 +67,7 @@ label {
 }
 
 .todo-button.edit {
-  background: linear-gradient( 90deg, 
-  rgba(48, 16, 255, 1 ) 0%,
-  rgba(100, 115, 255, 1 ) 100% 
-  ); 
+  background:transparent; 
   padding: 16px 22px;
 } 
 
@@ -90,15 +81,12 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 4px auto;
   color: #fff;
-  background: linear-gradient( 90deg, 
-  rgba(48, 16, 255, 1 ) 0%,
-  rgba(100, 115, 255, 1 ) 100% 
-  ); 
+  background:transparent;
+  border: 2px solid #201e1f; 
   padding: 16px;
   border-radius: 5px;
-  width: 90%;
+  width: 100%;
 }
 
 
@@ -155,8 +143,8 @@ label {
   justify-content: start;
   text-align: start;
   padding: 10px;
+  
 }
-
 
 
 
