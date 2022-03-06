@@ -1,5 +1,5 @@
 # react-spa-to-do-list
-# Task List SPA
+# Task List SPA + REST API Hapi.js
 
 ## Descrição do Projeto
 <p align="start">O aplicativo deve permitir ao usuário;</p>
