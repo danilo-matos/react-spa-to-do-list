@@ -1,0 +1,3 @@
+exports.taskTable = (databaseUrl) => { 
+  databaseUrl.run('CREATE TABLE IF NOT EXISTS task(id INTEGER PRIMARY KEY AUTOINCREMENT, status  TEXT CHECK (status IN("COMPLETE","INCOMPLETE")) NOT NULL DEFAULT "INCOMPLETE",description TEXT NOT NULL, dateAdded TEXT DEFAULT CURRENT_TIMESTAMP)'); 
+}
